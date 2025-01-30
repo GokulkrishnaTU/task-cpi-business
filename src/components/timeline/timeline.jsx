@@ -30,16 +30,17 @@ const Timeline = () => {
 
         {events.map((event, index) => (
           <div key={index} className="event-item">
-            <div className="time-section">
-              {event.start}
-              {event.end && <span>{event.end}</span>}
-            </div>
+     
 
             <div className="dot-container">
               <div className="dot"></div>
             </div>
 
             <div className="event-content">
+            <div className="time-section">
+              {event.start}
+              {event.end && <span>{event.end}</span>}
+            </div>
               <h3 className="event-title">{event.title}</h3>
               {event.speaker && (
                 <p className="event-speaker">{event.speaker}</p>
@@ -51,7 +52,12 @@ const Timeline = () => {
           </div>
         ))}
       </div>
-    </div>
+
+
+
+      <img src="/eventsOverview/Layer_1 (2).png" alt="" className='timelineRightIcon' />
+    </div >
+      <img src="/eventsOverview/Layer_1 (1).png" alt="" className='timelineLefttIcon' />
     </div>
   );
 };

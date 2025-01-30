@@ -1,13 +1,30 @@
 .timeline-wrapper{
     background-color: #0034ae;
     width: 100%;
+    position: relative;
 }
 
 .timeline-container {
-    max-width: 42rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem;
     width: 100%;
+    position: relative;
+  }
+
+  .timelineRightIcon{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    object-fit: contain;
+    height: 400px;
+  }
+
+  .timelineLefttIcon{
+    position: absolute;
+    left: 8%;
+    top: 0;
+    object-fit: contain;
   }
   
   .timeline-heading {
@@ -34,10 +51,12 @@
   }
   
   .time-section {
-    width: 6rem;
+    width: 12rem;
     flex-shrink: 0;
     font-size: 0.875rem;
     font-weight: 600;
+    display: flex;
+    gap: 10px;
   }
   
   .time-section span {

@@ -1,0 +1,91 @@
+.footer-container {
+    background: #0034ae;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding-inline: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.register-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.register-subheading {
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.register-button {
+    background: #ADEDEA;
+    color: #0034ae;
+    border: none;
+    padding: 10px;
+    font-size: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 60%;
+}
+
+.website-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.required::after {
+    content: '*';
+    color: #ff4081;
+    margin-left: 3px;
+}
+
+.bottomLabel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px ;
+    border-top: 1px solid white;
+
+}

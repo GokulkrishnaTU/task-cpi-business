@@ -5,10 +5,16 @@ function EventsHighlight() {
   return (
     <div className='highlight-wrapper'>
          <div class="highlight-container">
-        <div class="title">Event Highlights</div>
-        <div class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+
+
         
         <div class="circles">
+        <div className="text-box-events">
+
+
+<div class="title">Event Highlights</div>
+<div class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+</div>
             <div class="circle circle1">
                 <strong>Immersive Experiences:</strong> Leveraging digital-first engagements, the forum will offer immersive experiences emphasizing future-readiness.
             </div>

@@ -34,6 +34,13 @@
     height: 500px;
 }
 
+.text-box-events{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+}
+
 .circle {
     position: absolute;
     border-radius: 50%;
@@ -64,15 +71,24 @@
 @media (max-width: 768px) {
     .circles {
         height: 600px;
+        position: relative;
     }
     .circle {
         height: 180px;
         font-size: 12px;
         padding: 15px;
     }
-    .circle1, .circle2, .circle3, .circle4, .circle5 {
+    /* .circle1, .circle2, .circle3, .circle4, .circle5 {
         position: static;
         transform: none;
         margin: 10px auto;
-    }
+    } */
+
+
+    /* Positioning circles */
+    .circle3 { top: 0px; left: 20%; transform: translateX(-50%); width: 150px; height: 150px; }
+    .circle1 { top: 250px; left: auto; right: 10px; width: 180px; transform: translateX(0); height: 180px; background: #d9d9d9; }
+    .circle2 { top: 10px; right: 10%; width: 150px; height: 150px; }
+.circle4 {top: auto; bottom: 20px; left: 10%; width: 140px; height: 140px; background: #8ddcff; }
+.circle5 { bottom: 20px; right: 10%; width: 140px; height: 140px; background: #8ddcff; }
 }
