@@ -1,7 +1,8 @@
 .timeline-wrapper{
-    background-color: #0034ae;
+    background-color: #00236F;
     width: 100%;
     position: relative;
+    padding-inline: 80px;
 }
 
 .timeline-container {
@@ -51,12 +52,13 @@
   }
   
   .time-section {
-    width: 12rem;
+    width: 100%;
     flex-shrink: 0;
-    font-size: 0.875rem;
+    font-size: 22px;
     font-weight: 600;
     display: flex;
     gap: 10px;
+    color: #ADEDEA;
   }
   
   .time-section span {
@@ -91,6 +93,7 @@
   .event-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: white;
   }
   
   .event-speaker {
@@ -110,7 +113,55 @@
     content: '';
     position: absolute;
     width: 2px;
-    height: calc(100% + 8rem);
+    height: calc(100% + 15rem);
     background-color: #ADEDEA;
     top: 1.25rem;
   }
+
+
+  
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+
+  .timeline-wrapper{
+
+    padding-inline: 40px;
+}
+
+
+.timelineLefttIcon{
+
+  Width :32px;
+Height:45px;
+}
+
+
+.event-title {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.event-description{
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 16px;
+
+}
+
+.event-boldDesc {
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+
+.event-speaker {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 16px;
+}
+
+}

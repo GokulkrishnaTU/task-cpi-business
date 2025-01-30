@@ -1,16 +1,15 @@
 .footer-container {
     background: #0034ae;
     color: white;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
     width: 100%;
-    padding-inline: 80px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding: 40px 20px;
+    padding-inline: 80px;
 }
 
 .register-heading {
@@ -26,8 +25,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 0 30px 0;
 }
 
 .form-group {
@@ -45,7 +43,8 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
+    background-color: #ADEDEA;
 }
 
 .register-button {
@@ -57,7 +56,7 @@
     border-radius: 30px;
     cursor: pointer;
     font-weight: bolder;
-    width: 60%;
+    width: 40%;
 }
 
 .website-link {
@@ -81,11 +80,59 @@
     margin-left: 3px;
 }
 
-.bottomLabel{
+.bottomLabel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 20px ;
+    padding-block: 20px;
     border-top: 1px solid white;
+    padding-inline: 80px;
+}
 
+.sm-icons {
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mui-icon {
+    font-size: 15px !important; /* Adjust size */
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mui-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .registration-form {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .bottomLabel {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding-inline: 20px;
+    }
+
+    .register-button {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }

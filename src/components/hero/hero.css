@@ -4,6 +4,7 @@
     width: 100%; /* Ensure full width */
     background-image: url("/public/hero/hero-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .nav {

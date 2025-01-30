@@ -6,9 +6,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 20px;
+    position: relative;
+    padding: 80px;
+    
 }
+
+.wrapperBg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+    height: 500px;
+}
+
 .highlight-container {
     position: relative;
     text-align: left;
@@ -46,7 +56,7 @@
     border-radius: 50%;
     padding: 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -60,6 +70,15 @@
     font-weight: 600;
 }
 
+
+.circleImg{
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+}
+
 /* Positioning circles */
 .circle1 { top: 0px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; }
 .circle2 { top: 50px; right: 5%; width: 180px; height: 180px; background: #d9d9d9; }
@@ -67,10 +86,24 @@
 .circle4 { top: 250px; left: 40%; width: 140px; height: 140px; background: #9dd3ff; }
 .circle5 { bottom: 20px; right: 10%; width: 240px; height: 240px; background: #8ddcff; }
 
+.circle6 { top: 210px; right: 5%; width: 30px; height: 30px; background: #fdfdfd; }
+.circle7 { top: 220px; right: 50%; width: 30px; height: 30px; background: #8ddcff; }
+.circle8 { top: 350px; left: 35%; width: 30px; height: 30px; background: #8ddcff; }
+.circle9 { top: 320px; left: 5%; width: 10px; height: 10px; background: #8ddcff; }
+.circle10 { top: 420px; right: 5%; width: 10px; height: 10px; background: #8ddcff; }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .highlight-wrapper {
+   
+        padding: 0px;
+    }
+
+
     .circles {
-        height: 600px;
+        height: 800px;
         position: relative;
     }
     .circle {
@@ -78,17 +111,38 @@
         font-size: 12px;
         padding: 15px;
     }
-    /* .circle1, .circle2, .circle3, .circle4, .circle5 {
+
+
+
+    .text-box-events{
         position: static;
-        transform: none;
-        margin: 10px auto;
-    } */
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+   
+    }
+
+    
+.wrapperBg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+    height: 200px;
+}
 
 
     /* Positioning circles */
-    .circle3 { top: 0px; left: 20%; transform: translateX(-50%); width: 150px; height: 150px; }
-    .circle1 { top: 250px; left: auto; right: 10px; width: 180px; transform: translateX(0); height: 180px; background: #d9d9d9; }
-    .circle2 { top: 10px; right: 10%; width: 150px; height: 150px; }
-.circle4 {top: auto; bottom: 20px; left: 10%; width: 140px; height: 140px; background: #8ddcff; }
-.circle5 { bottom: 20px; right: 10%; width: 140px; height: 140px; background: #8ddcff; }
+    .circle3 { top: 150px; left: 30%; transform: translateX(-50%); width: 179px; height: 179px; }
+    .circle1 { top: 325px; left: auto; right: 80px; width: 215px; transform: translateX(0); height: 215px; background: #d9d9d9; }
+    .circle2 { top: 140px; right: 10%; width: 139px; height: 139px; }
+.circle4 {top: auto; bottom: 160px; left: 10%; width: 148px; height: 148px; background: #8ddcff; }
+.circle5 { bottom: 20px; right: 10%; width: 227px; height: 227px; background: #8ddcff; }
+
+
+.circle6 { top: 110px; right: 3%; width: 20px; height: 20px; background: #8ddcff; }
+.circle7 { top: 275px; right: 40%; width: 10px; height: 10px; background: #8ddcff; }
+.circle8 { top: 345px; left: 30%; width: 30px; height: 30px; background: #8ddcff; }
+.circle9 { top: 520px; left: 5%; width: 5px; height: 5px; background: #8ddcff; }
+.circle10 { top: 525px; right: 17%; width: 30px; height: 30px; background: #8ddcff; }
 }

@@ -14,8 +14,8 @@ function App() {
       <EventsOverview/>
       <VideoSection/>
        <Slider/>
-       <Timeline/>
        <EventsHighlight/>
+       <Timeline/>
        <Footer/>
     </div>
   );

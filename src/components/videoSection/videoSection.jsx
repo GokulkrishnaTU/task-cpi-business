@@ -13,7 +13,7 @@ function VideoSection() {
 
             <div className="videoSectionBottom">
                 <div className="descVideo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet optio expedita officia aliquid soluta quam, explicabo suscipit corporis impedit eos debitis fugiat laudantium ducimus placeat nostrum perspiciatis neque blanditiis porro quis dolor cupiditate commodi totam? Omnis neque temporibus eos placeat!
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
                 </div>
                 <div className="iconVideo">

@@ -30,8 +30,20 @@ function EventsHighlight() {
             <div class="circle circle5">
                 <strong>Future Foresight:</strong> Presentation of Future Foresight findings involving students, teachers, and principals.
             </div>
+
+            <div class="circleImg circle6">
+            </div>
+            <div class="circleImg circle7">
+            </div>
+            <div class="circleImg circle8">
+            </div>
+            <div class="circleImg circle9">
+            </div>
+            <div class="circleImg circle10">
+            </div>
         </div>
     </div>
+    <img src="/eventsOverview/eventsBg.png" alt="" className='wrapperBg' />
 
       
     </div>

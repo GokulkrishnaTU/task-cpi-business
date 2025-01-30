@@ -13,6 +13,16 @@
   --bg: #f5f5f5;
 }
 
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('/public/fonts/29lt-bukra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the font in your styles */
+
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -57,6 +67,8 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bg);
+  font-family: '29LT Bukra', sans-serif;
+
 }
 
 .main{

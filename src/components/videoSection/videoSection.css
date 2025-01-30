@@ -1,6 +1,7 @@
 .video-wrapper{
     padding-inline: 60px;
     background-color:#0034ae ;
+    padding-top: 30px;
 }
 
 .video-container{
@@ -21,7 +22,7 @@
 .video{
     object-fit: contain;
     height: 600px;
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
 
 }
@@ -29,7 +30,7 @@
 .videoSectionBottom{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 .descVideo{
@@ -38,4 +39,35 @@
 
 .iconVideo{
     flex: 1;
+    position: relative;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
+    .video{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+    
+    }
+
+    .videoSectionBottom{
+     
+        width: 100%;
+    }
+
+    .videoIconBottom{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
 }
