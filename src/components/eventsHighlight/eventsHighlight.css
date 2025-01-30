@@ -1,0 +1,78 @@
+
+
+.highlight-wrapper {
+    background: linear-gradient(to right, #001F71, #002E99);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.highlight-container {
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #9dd3ff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #c0d5ff;
+    margin-bottom: 40px;
+}
+
+.circles {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle strong {
+    font-weight: 600;
+}
+
+/* Positioning circles */
+.circle1 { top: 0px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; }
+.circle2 { top: 50px; right: 5%; width: 180px; height: 180px; background: #d9d9d9; }
+.circle3 { top: 180px; left: 10%; width: 220px; height: 220px; }
+.circle4 { top: 250px; left: 40%; width: 140px; height: 140px; background: #9dd3ff; }
+.circle5 { bottom: 20px; right: 10%; width: 240px; height: 240px; background: #8ddcff; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .circles {
+        height: 600px;
+    }
+    .circle {
+        height: 180px;
+        font-size: 12px;
+        padding: 15px;
+    }
+    .circle1, .circle2, .circle3, .circle4, .circle5 {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+    }
+}

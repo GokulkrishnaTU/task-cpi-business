@@ -1,0 +1,67 @@
+.hero-wrapper {
+    position: relative; /* Makes this the reference for absolute positioning */
+    height: 80vh; /* Ensure it takes full viewport height */
+    width: 100%; /* Ensure full width */
+    background-image: url("/public/hero/hero-bg.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .nav {
+    position: absolute; /* Positions it inside hero-wrapper */
+    top: 0; /* Adjust top position as needed */
+    left: 0; /* Center horizontally */
+    transform: translateX(-50%); /* Perfect center alignment */
+    width: 100%; /* Optional: Ensure full width */
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.subheading {
+    font-size: 15px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: white;
+}
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: white;
+}
+.details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arabic {
+    font-weight: bold;
+    direction: rtl;
+}
+  
+.iconsImg{
+    object-fit: contain;
+    width: 15px;
+    height: 15px;
+}

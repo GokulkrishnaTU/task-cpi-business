@@ -1,0 +1,32 @@
+
+
+
+
+.register-btn{
+/* display: inline; */
+width: 160px;
+margin: auto;
+height: 35px;
+border-radius: 80px ;
+opacity: 0px;
+background-color: #ADEDEA;
+color: #0034AE;
+font-family: 29LT Bukra;
+font-size: 12px;
+font-weight: 700;
+line-height: 21.6px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+text-align: center;
+
+
+
+}
+
+
+@media (max-width: 720px) {
+    .register-btn{
+display: none;
+    }
+  }
+  
