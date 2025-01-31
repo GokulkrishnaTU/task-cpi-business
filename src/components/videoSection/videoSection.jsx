@@ -9,6 +9,10 @@ function VideoSection() {
         {/* Video Section: Image Display */}
         <div className="videoSection">
           <img src="/video/videoImg.png" alt="Video Thumbnail" className="video" />
+
+{/* add the video vide now i have added the demo video image */}
+
+          {/* <video src="" autoPlay></video> */}
         </div>
 
         {/* Video Section Bottom: Description and Icon */}
