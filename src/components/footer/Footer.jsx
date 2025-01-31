@@ -22,8 +22,8 @@ function Footer() {
             <input type="text" placeholder="First Name" />
           </div>
           <div className="form-group">
-            <label className="required" placeholder="Last Name">Last Name</label>
-            <input type="text" />
+            <label className="required">Last Name</label>
+            <input type="text"  placeholder="Last Name" />
           </div>
           <div className="form-group">
             <label className="required">Gender</label>

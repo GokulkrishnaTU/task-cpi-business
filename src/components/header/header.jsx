@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import "./header.css"
+import "./header.css";
 
 export default function MenuAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,16 +21,16 @@ export default function MenuAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }} >
-      <AppBar position="static"   sx={{
-          backgroundColor: "transparent",
-          boxShadow: "none",
-        }}>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+      >
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}></Box>
 
           <Box sx={{ marginLeft: "auto" }}>
-          <button className="register-btn">Register Now</button>
+            <button className="register-btn">Register Now</button>
 
             <IconButton
               sx={{ fontSize: "2rem" }} // Increase icon size
@@ -39,21 +39,14 @@ export default function MenuAppBar() {
               aria-haspopup="true"
               onClick={handleMenu}
             >
-
-<MenuIcon sx={{ fontSize: 40, color: "white" }} /> {/* Ensures icon is white */}
-</IconButton>
+              <MenuIcon sx={{ fontSize: 40, color: "white" }} />
+            </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: "bottom", // Ensure visibility
-                horizontal: "right",
-              }}
+              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
+              transformOrigin={{ vertical: "top", horizontal: "right" }}
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >

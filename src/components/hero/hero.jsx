@@ -1,38 +1,45 @@
-import React from 'react'
-import "./hero.css"
-import MenuAppBar from '../header/herader'
+import React from 'react';
+import './hero.css';
+import MenuAppBar from '../header/header';
 
 function Hero() {
   return (
     <div className='hero-wrapper'>
-        <MenuAppBar className="nav"/>
-    <div class="hero-container">
+      {/* Navigation Bar */}
+      <MenuAppBar className='nav' />
 
-        <div className="first-section">
-
-        <h1 class="arabic">التعليم أولاً</h1>
-        <h1>EDUCATION FIRST</h1>
+      {/* Hero Section */}
+      <div className='hero-container'>
+        <div className='first-section'>
+          <h1 className='arabic'>التعليم أولاً</h1>
+          <h1>EDUCATION FIRST</h1>
         </div>
-        <p class="subheading">FROM ASK TO ACTION</p>
-        <button className="register-btn-desktop">Register Now</button>
+        <p className='subheading'>FROM ASK TO ACTION</p>
 
-        <div class="details">
-            <div>
-                <span>
-                    <img src="/hero/Vector (1).png" alt="" className='iconsImg' />
-                    </span> <span>January 24, 2023</span>
-            </div>
-            <div>
-                <span> <img src="/hero/clock-history.png" alt="" className='iconsImg' /> </span> <span>10:00 AM - 12:00 PM</span>
-            </div>
-            <div>
-                <span> <img src="/hero/calendar2-week.png" alt="" className='iconsImg' /> </span> <span>Marina Hall, ADNEC</span>
-            </div>
+        {/* Register Button (visible on mobile) */}
+        <button className='register-btn-desktop'>Register Now</button>
+
+        {/* Event Details */}
+        <div className='details'>
+          <div>
+            <img src='/hero/Vector (1).png' alt='Date Icon' className='iconsImg' />
+            <span>January 24, 2023</span>
+          </div>
+          <div>
+            <img src='/hero/clock-history.png' alt='Time Icon' className='iconsImg' />
+            <span>10:00 AM - 12:00 PM</span>
+          </div>
+          <div>
+            <img src='/hero/calendar2-week.png' alt='Location Icon' className='iconsImg' />
+            <span>Marina Hall, ADNEC</span>
+          </div>
         </div>
+      </div>
+
+      {/* Hero Shade */}
+      <img src='/hero/shadeHero.png' className='heroShade' alt='Hero Shade' />
     </div>
-    <img src="/hero/shadeHero.png" className='heroShade' alt="" />
-    </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
