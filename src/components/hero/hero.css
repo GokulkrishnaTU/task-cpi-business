@@ -1,57 +1,65 @@
 .hero-wrapper {
-    position: relative; /* Makes this the reference for absolute positioning */
-    width: 100%; /* Ensure full width */
-    background-image: url("/public/hero/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    position: relative;
+    width: 100%;
+    background: url("/public/hero/hero-bg.jpg") no-repeat center/cover;
+}
 
-  .heroShade{
+.heroShade {
     position: absolute;
     bottom: 0;
     left: 0;
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
+}
 
-  }
-  
-  .nav {
-    position: absolute; /* Positions it inside hero-wrapper */
-    top: 0; /* Adjust top position as needed */
-    left: 0; /* Center horizontally */
-    transform: translateX(-50%); /* Perfect center alignment */
-    width: 100%; /* Optional: Ensure full width */
-    z-index: 10; /* Ensure it stays above other elements */
-  }
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+}
 
-
-
-  .hero-container {
+.hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
     position: relative;
     height: 100vh;
     padding-inline: 80px;
 }
 
-.details{
+.details {
     position: absolute;
-    z-index: 100;
     bottom: 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
 }
 
-.first-section{
+.details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.first-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: white;
     font-size: 30px;
     font-weight: bold;
+    color: white;
 }
 
 .subheading {
@@ -60,94 +68,56 @@
     text-transform: uppercase;
     color: white;
 }
-.details {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-}
-.details div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .arabic {
     font-weight: bold;
     direction: rtl;
 }
-  
-.iconsImg{
+
+.iconsImg {
     object-fit: contain;
     width: 15px;
     height: 15px;
 }
 
-
-
-
-
-
-.register-btn-desktop{
-    /* display: inline; */
+.register-btn-desktop {
     width: 160px;
     height: 35px;
-    border-radius: 80px ;
-    opacity: 0px;
+    border-radius: 80px;
     background-color: #ADEDEA;
     color: #0034AE;
-    font-family: 29LT Bukra;
     font-size: 12px;
     font-weight: 700;
-    line-height: 21.6px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     text-align: center;
     outline: none;
     border: none;
     display: none;
-    
-    
-    }
-    
-    
-    @media (max-width: 720px) {
-        .register-btn-desktop{
-            display: block;
-        }
-
-
-        .details {
-       padding-inline: 18px;
-        }
-
-
-        .first-section{
-
-            font-size: 16px;
-            text-align: center;
-        }
-
-        
-  .hero-container {
-
-    height: 600px;
-    padding-inline: 20px;
-    gap: 20px;
-
 }
-      }
-      
 
+/* Responsive Styles */
+@media (max-width: 720px) {
+    .register-btn-desktop {
+        display: block;
+    }
+
+    .details {
+        padding-inline: 18px;
+    }
+
+    .first-section {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero-container {
+        height: 600px;
+        padding-inline: 20px;
+        gap: 20px;
+    }
+}
 
 @media (max-width: 468px) {
-
-    .heroShade{
-
-display: none;
+    .heroShade {
+        display: none;
     }
-
 }
