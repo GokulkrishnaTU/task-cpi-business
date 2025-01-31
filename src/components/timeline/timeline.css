@@ -1,182 +1,182 @@
 .timeline-wrapper{
-    background-color: #00236F;
-    width: 100%;
-    position: relative;
-   padding: 20px 80px 80px 80px;
+  background-color: #00236F;
+  width: 100%;
+  position: relative;
+ padding: 20px 80px 80px 80px;
 }
 
 .timeline-container {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 1.5rem;
-    width: 100%;
-    position: relative;
-  }
-
-  .timelineRightIcon{
-    position: absolute;
-    right: 0px;
-    bottom: 0;
-    object-fit: contain;
-    height: 400px;
-  }
-
-  .timelineLefttIcon{
-    position: absolute;
-    left: 8%;
-    top: 90px;
-    object-fit: contain;
-  }
-  
-  .timeline-heading {
-    font-size: 27px;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: left;
-    color: #ADEDEA;
-  }
-  
-  .timeline-vertical-line {
-    position: absolute;
-    left: 1rem;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    /* background-color: #e5e7eb; */
-  }
-  
-  .event-item {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-  }
-  
-  .time-section {
-    width: 100%;
-    flex-shrink: 0;
-    font-size: 22px;
-    font-weight: 600;
-    display: flex;
-    gap: 10px;
-    color: #ADEDEA;
-  }
-  
-  .time-section span {
-    display: block;
-  }
-  
-  .dot-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-  }
-  
-  .dot {
-    width: 2rem;
-    height: 2rem;
-    background-color: #ADEDEA;
-    border-radius: 50%;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .event-content {
-    flex: 1;
-    /* background-color: white; */
-    padding: 1rem;
-    border-radius: 0.5rem;
-    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
-  }
-  
-  .event-title {
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: white;
-  }
-  
-  .event-speaker {
-    font-size: 0.875rem;
-    color: #4b5563;
-    margin-bottom: 0.5rem;
-  }
-  
-  .event-description {
-    font-size: 0.875rem;
-    color: #4b5563;
-    white-space: pre-line;
-  }
-  
-  /* Connector lines between dots */
-  .event-item:not(:last-child) .dot-container::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: calc(100% + 18rem);
-    background-color: #ADEDEA;
-    top: 1.25rem;
-  }
-
-
-  .event-boldDescDesktop {
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    color: white;
-  }
-
-  
-/* Responsive Styles */
-@media (max-width: 768px) {
-
-
-  .timeline-wrapper{
-
-    padding-inline: 40px;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
 }
 
-
-.timelineLefttIcon{
-
-  Width :32px;
-Height:45px;
+.timelineRightIcon{
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  object-fit: contain;
+  height: 400px;
 }
 
+.timelineLeftIcon{
+  position: absolute;
+  left: 5%;
+  top: 90px;
+  object-fit: contain;
+}
+
+.timeline-heading {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #ADEDEA;
+}
+
+.timeline-vertical-line {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  /* background-color: #e5e7eb; */
+}
+
+.event-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.time-section {
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  color: #ADEDEA;
+}
+
+.time-section span {
+  display: block;
+}
+
+.dot-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ADEDEA;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.event-content {
+  flex: 1;
+  /* background-color: white; */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
+}
 
 .event-title {
   font-weight: normal;
   margin-bottom: 0.5rem;
   color: white;
-  font-size: 15px;
 }
-.event-description{
-  font-weight: 100;
+
+.event-speaker {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  white-space: pre-line;
+}
+
+/* Connector lines between dots */
+.event-item:not(:last-child) .dot-container::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: calc(100% + 18rem);
+  background-color: #ADEDEA;
+  top: 1.25rem;
+}
+
+
+.event-boldDescDesktop {
+  font-weight: 900;
   margin-bottom: 0.5rem;
   color: white;
-  font-size: 16px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+
+.timeline-wrapper{
+
+  padding-inline: 40px;
+}
+
+
+.timelineLeftIcon{
+
+Width :32px;
+Height:45px;
+}
+
+
+.event-title {
+font-weight: normal;
+margin-bottom: 0.5rem;
+color: white;
+font-size: 15px;
+}
+.event-description{
+font-weight: 100;
+margin-bottom: 0.5rem;
+color: white;
+font-size: 16px;
 
 }
 
 .event-boldDesc {
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-  color: white;
+font-weight: 900;
+margin-bottom: 0.5rem;
+color: white;
 }
 
 
 .event-speaker {
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-  color: white;
-  font-size: 16px;
+font-weight: 900;
+margin-bottom: 0.5rem;
+color: white;
+font-size: 16px;
 }
 
 .time-section {
 
-  font-size: 15px;
+font-size: 15px;
 
-  color: #ffff;
+color: #ffff;
 }
 
 }
@@ -192,52 +192,52 @@ Height:45px;
 
 
 
-  
+
 /* Responsive Styles */
 @media (max-width: 468px) {
 
 
 .event-title {
 
-  font-size: 12px;
+font-size: 12px;
 }
 .event-description{
-  font-weight: 100;
-  margin-bottom: 0.5rem;
-  color: white;
-  font-size: 12px;
+font-weight: 100;
+margin-bottom: 0.5rem;
+color: white;
+font-size: 12px;
 
 }
 
 .event-boldDesc {
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-  color: white;
-  font-size: 12px;
+font-weight: 900;
+margin-bottom: 0.5rem;
+color: white;
+font-size: 12px;
 }
 
 
 .event-speaker {
 
-  font-size: 12px;
+font-size: 12px;
 }
 
 .time-section {
 
-  font-size: 12px;
+font-size: 12px;
 
-  color: #ffff;
+color: #ffff;
 }
 
 
 .event-item:not(:last-child) .dot-container::after {
 
-  height: calc(100% + 19rem);
+height: calc(100% + 19rem);
 
 }
 
 .timeline-wrapper {
-  padding-inline: 22px;
+padding-inline: 22px;
 }
 
 
