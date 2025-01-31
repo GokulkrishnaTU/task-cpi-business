@@ -177,7 +177,7 @@
 
   .text-box-events {
     position: static;
-    text-align: center;
+    text-align: left;
     width: 100%;
     padding: 20px;
   }
@@ -286,7 +286,7 @@
 
   .text-box-events {
     position: static;
-    text-align: center;
+    text-align: left;
     width: 100%;
     padding: 15px;
   }

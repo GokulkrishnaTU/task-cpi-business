@@ -22,7 +22,7 @@ function Hero() {
         {/* Event Details */}
         <div className='details'>
           <div>
-            <img src='/hero/Vector (1).png' alt='Date Icon' className='iconsImg' />
+            <img src='/hero/calendar2-week.png' alt='Date Icon' className='iconsImg' />
             <span>January 24, 2023</span>
           </div>
           <div>
@@ -30,7 +30,7 @@ function Hero() {
             <span>10:00 AM - 12:00 PM</span>
           </div>
           <div>
-            <img src='/hero/calendar2-week.png' alt='Location Icon' className='iconsImg' />
+            <img src='/hero/Vector (1).png' alt='Location Icon' className='iconsImg' />
             <span>Marina Hall, ADNEC</span>
           </div>
         </div>

@@ -57,6 +57,9 @@ function Footer() {
           </a>
 
           <div className="social-icons">
+            <span>
+              <p className="folow-text">Follow us on :</p>
+            </span>
             <span className="sm-icons">
               <FacebookIcon className="mui-icon" />
             </span>

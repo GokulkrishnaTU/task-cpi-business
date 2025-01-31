@@ -6,7 +6,7 @@ function EventsOverview() {
     <div className='events-wrapper'>
       {/* Event Overview Section */}
       <div className='events-container'>
-        <h1>Event Overview</h1>
+        <h1 className='eventsOverview-header'>Event Overview</h1>
         <p>
           The Education First Forum welcomes you back to its second edition on January 24th, 2024, aligning with the International Day of Education, continuing ECAE’s commitment to advancing education.
         </p>
