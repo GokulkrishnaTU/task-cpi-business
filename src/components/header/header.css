@@ -18,7 +18,8 @@ line-height: 21.6px;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 text-align: center;
-
+outline: none;
+border: none;
 
 
 }

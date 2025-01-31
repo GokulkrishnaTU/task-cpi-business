@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='hero-wrapper'>
         <MenuAppBar className="nav"/>
-    <div class="container">
+    <div class="hero-container">
 
         <div className="first-section">
 
@@ -14,6 +14,8 @@ function Hero() {
         <h1>EDUCATION FIRST</h1>
         </div>
         <p class="subheading">FROM ASK TO ACTION</p>
+        <button className="register-btn-desktop">Register Now</button>
+
         <div class="details">
             <div>
                 <span>
@@ -28,6 +30,7 @@ function Hero() {
             </div>
         </div>
     </div>
+    <img src="/hero/shadeHero.png" className='heroShade' alt="" />
     </div>
   )
 }

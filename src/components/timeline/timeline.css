@@ -2,7 +2,7 @@
     background-color: #00236F;
     width: 100%;
     position: relative;
-    padding-inline: 80px;
+   padding: 20px 80px 80px 80px;
 }
 
 .timeline-container {
@@ -24,15 +24,15 @@
   .timelineLefttIcon{
     position: absolute;
     left: 8%;
-    top: 0;
+    top: 90px;
     object-fit: contain;
   }
   
   .timeline-heading {
-    font-size: 1.875rem;
+    font-size: 27px;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
   }
   
   .timeline-vertical-line {
@@ -91,7 +91,7 @@
   }
   
   .event-title {
-    font-weight: 600;
+    font-weight: normal;
     margin-bottom: 0.5rem;
     color: white;
   }
@@ -113,11 +113,17 @@
     content: '';
     position: absolute;
     width: 2px;
-    height: calc(100% + 15rem);
+    height: calc(100% + 18rem);
     background-color: #ADEDEA;
     top: 1.25rem;
   }
 
+
+  .event-boldDescDesktop {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
 
   
 /* Responsive Styles */
@@ -138,9 +144,10 @@ Height:45px;
 
 
 .event-title {
-  font-weight: 100;
+  font-weight: normal;
   margin-bottom: 0.5rem;
   color: white;
+  font-size: 15px;
 }
 .event-description{
   font-weight: 100;
@@ -158,10 +165,80 @@ Height:45px;
 
 
 .event-speaker {
-  font-weight: 100;
+  font-weight: 900;
   margin-bottom: 0.5rem;
   color: white;
   font-size: 16px;
 }
+
+.time-section {
+
+  font-size: 15px;
+
+  color: #ffff;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Responsive Styles */
+@media (max-width: 468px) {
+
+
+.event-title {
+
+  font-size: 12px;
+}
+.event-description{
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 12px;
+
+}
+
+.event-boldDesc {
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 12px;
+}
+
+
+.event-speaker {
+
+  font-size: 12px;
+}
+
+.time-section {
+
+  font-size: 12px;
+
+  color: #ffff;
+}
+
+
+.event-item:not(:last-child) .dot-container::after {
+
+  height: calc(100% + 19rem);
+
+}
+
+.timeline-wrapper {
+  padding-inline: 22px;
+}
+
+
 
 }

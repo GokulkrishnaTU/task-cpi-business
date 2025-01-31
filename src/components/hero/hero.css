@@ -1,10 +1,18 @@
 .hero-wrapper {
     position: relative; /* Makes this the reference for absolute positioning */
-    height: 80vh; /* Ensure it takes full viewport height */
     width: 100%; /* Ensure full width */
     background-image: url("/public/hero/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .heroShade{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+
   }
   
   .nav {
@@ -18,12 +26,21 @@
 
 
 
-  .container {
+  .hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     position: relative;
+    height: 100vh;
+    padding-inline: 80px;
+}
+
+.details{
+    position: absolute;
+    z-index: 100;
+    bottom: 100px;
 }
 
 .first-section{
@@ -34,6 +51,7 @@
     gap: 10px;
     color: white;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .subheading {
@@ -49,6 +67,7 @@
     margin-top: 30px;
     font-size: 1rem;
     color: white;
+    font-weight: bold;
 }
 .details div {
     display: flex;
@@ -65,4 +84,66 @@
     object-fit: contain;
     width: 15px;
     height: 15px;
+}
+
+
+
+
+
+
+.register-btn-desktop{
+    /* display: inline; */
+    width: 160px;
+    height: 35px;
+    border-radius: 80px ;
+    opacity: 0px;
+    background-color: #ADEDEA;
+    color: #0034AE;
+    font-family: 29LT Bukra;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    display: none;
+    
+    
+    }
+    
+    
+    @media (max-width: 720px) {
+        .register-btn-desktop{
+            display: block;
+        }
+
+
+
+        .first-section{
+
+            font-size: 16px;
+            text-align: center;
+        }
+
+        
+  .hero-container {
+
+    height: 600px;
+    padding-inline: 20px;
+    gap: 20px;
+
+}
+      }
+      
+
+
+@media (max-width: 468px) {
+
+    .heroShade{
+
+display: none;
+    }
+
 }

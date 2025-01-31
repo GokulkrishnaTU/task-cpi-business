@@ -30,11 +30,13 @@
 .videoSectionBottom{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 
 .descVideo{
     flex: 4;
+    color: white;
+    font-size: 16px;
 }
 
 .iconVideo{
@@ -69,5 +71,14 @@
         right: 0;
     }
 
+
+    .descVideo{
+     
+        font-size: 12px;
+    }
+    .video-wrapper{
+   
+        padding-inline: 20px;
+    }
 
 }

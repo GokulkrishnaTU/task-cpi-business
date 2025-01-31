@@ -18,11 +18,11 @@ function Footer() {
 
         <form className="registration-form">
           <div className="form-group">
-            <label className="required">First Name</label>
-            <input type="text" />
+            <label className="required"  >First Name</label>
+            <input type="text" placeholder="First Name" />
           </div>
           <div className="form-group">
-            <label className="required">Last Name</label>
+            <label className="required" placeholder="Last Name">Last Name</label>
             <input type="text" />
           </div>
           <div className="form-group">
@@ -41,9 +41,13 @@ function Footer() {
               <option>Student</option>
             </select>
           </div>
+
+          <div className="RegButton">
+
           <button type="submit" className="register-button">
             REGISTER NOW
           </button>
+          </div>
         </form>
       </div>
 

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "./slider.css"
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -12,43 +13,46 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const slideImages = [
-  '/slider/img_1.jpg',
-  '/slider/img_2.jpg',
-  '/slider/img_3.jpg',
-  '/slider/img_4.jpg',
-  '/slider/img_5.jpg',
-  '/slider/img_6.jpg',
-  '/slider/img_7.jpg',
+  '/slider/slider (1).jpg',
+  '/slider/slider (2).jpg',
+  '/slider/slider (3).jpg',
+
 ];
 
 function Slider() {
     return (
       <div className="slider-wrapper">
         <div className="container">
-          <h1 className="heading">Flower Gallery</h1>
+
+          <div className="heading-box">
+
+          <h1 className="heading">Glimpse from Our Last Event</h1>
+          </div>
           <Swiper
-            effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            loop={true}
-            slidesPerView={'auto'}  // Fixes image cropping issue
-            spaceBetween={0}  // No extra spacing between slides
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-              slideShadows: false,
-            }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            className="swiper_container"
-          >
+  effect={'coverflow'}
+  grabCursor={true}
+  centeredSlides={true}
+  loop={false}
+  initialSlide={1}  // Start with the second slide as active
+  slidesPerView={'auto'}  // Ensures multiple slides are visible
+  spaceBetween={0}  // No extra spacing between slides
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+    slideShadows: false,
+  }}
+  pagination={{ el: '.swiper-pagination', clickable: true }}
+  navigation={{
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    clickable: true,
+  }}
+  modules={[EffectCoverflow, Pagination, Navigation]}
+  className="swiper_container"
+>
+
             {slideImages.map((image, index) => (
               <SwiperSlide key={index}>
                 <img src={image} alt={`slide_image_${index + 1}`} />
